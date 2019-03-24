@@ -11,5 +11,8 @@ namespace App\controllers;
 
 class UserController
 {
-
+    public function getIndex()
+    {
+        return "User page";
+    }
 }

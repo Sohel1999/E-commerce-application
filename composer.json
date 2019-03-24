@@ -1,7 +1,7 @@
 {
     "name": "md.sohel/llc-ecommerce",
     "description": "php raw using",
-    "license": "MIT",
+    "license": "",
     "authors": [
         {
             "name": "sohel",
@@ -11,5 +11,10 @@
     "require": {
         "phpmailer/phpmailer": "^6.0",
         "phroute/phroute": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
     }
 }

@@ -11,5 +11,7 @@ namespace App\controllers;
 
 class ProductController
 {
-
+    public  function  getIndex(){
+        return 'product';
+    }
 }
