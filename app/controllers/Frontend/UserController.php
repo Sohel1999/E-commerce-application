@@ -6,13 +6,13 @@
  * Time: 8:00 PM
  */
 
-namespace App\controllers;
+namespace App\controllers\frontend;
+use App\controllers\Controller;
 
-
-class UserController
+class UserController extends Controller
 {
     public function getIndex()
     {
-        return "User page";
+        $this->view('login');
     }
 }

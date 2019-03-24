@@ -6,10 +6,11 @@
  * Time: 12:20 PM
  */
 
-namespace App\controllers;
+namespace App\controllers\frontend;
+use App\controllers\Controller;
 
 
-class ProductController
+class ProductController extends Controller
 {
     public  function  getIndex(){
         return 'product';

@@ -9,7 +9,7 @@
     <title><?php echo $title ??'LLC E-commerce';?></title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- custome css-->
     <link rel="stylesheet" href="assets/css/app.css">
     <!-- responsive css-->

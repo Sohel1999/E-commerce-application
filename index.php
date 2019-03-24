@@ -1,7 +1,6 @@
 <?php
 
-use App\controllers\HomeController;
-use App\controllers\UserController;
+
 use Phroute\Phroute\Exception\HttpMethodNotAllowedException;
 use Phroute\Phroute\Exception\HttpRouteNotFoundException;
 use Phroute\Phroute\RouteCollector;
@@ -9,9 +8,8 @@ use Phroute\Phroute\RouteParser;
 use Phroute\Phroute\Dispatcher ;
 require_once 'vendor/autoload.php';
 $router=new RouteCollector(new RouteParser());
-$router->controller('/', HomeController::class) ;
-$router->controller('/product',\App\controllers\ProductController::class);
-$router->controller('/users', UserController::class) ;
+include_once __DIR__.'/routers.php';
+
 
 $dispatcher = new Dispatcher($router->getData());
 
