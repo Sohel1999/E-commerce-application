@@ -13,6 +13,6 @@ class UserController extends Controller
 {
     public function getIndex()
     {
-        $this->view('login');
+        view('login');
     }
 }
