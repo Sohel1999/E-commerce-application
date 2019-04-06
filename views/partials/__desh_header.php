@@ -8,8 +8,8 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title><?php echo $title ??'LLC E-commerce';?></title>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/deshboard.css">
+    <link rel="stylesheet" href="<?php BASE_URL?>/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php BASE_URL?>/assets/css/deshboard.css">
     <!-- custome css-->
 
     <!-- responsive css-->

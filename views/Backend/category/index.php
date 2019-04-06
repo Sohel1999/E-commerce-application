@@ -33,41 +33,39 @@
                     </div>
                  </div>
                 <div class="show-category-data">
-                    <?php
-                        echo '<pre>' ;
-                       var_dump($categories);
-                       echo '</pre>';
-                    ?>
+                  <?php if($categories->count() > 0) :?>
                     <table class="table">
                         <thead>
                         <tr>
                             <th scope="col">Id</th>
                             <th scope="col">Category Title</th>
                             <th scope="col">Slug</th>
+                            <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
                         </thead>
                         <tbody>
+                       <?php foreach ($categories as $category):?>
+                             
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <th scope="row"><?php echo $category->id; ?></th>
+                            <td><?php echo $category->title; ?></td>
+                            <td><?php echo $category->slug; ?></td>
+                            <td> <?php echo $category->active ===1 ? 'Active':'Inactive';?></td>
+                            <td>
+                                <a href="/deshboard/categories/edit/<?php echo $category->id?>"> Edit</a>
+                                <a href="/deshboard/categories/delete/<?php echo $category->id?>" onclick="return confirm('Are you sure')">Delete</a>
+                            </td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+
+                        <?php endforeach;?>
                         </tbody>
                     </table>
+                   <?php else: ?>
+                    <div class="alert alert-warning">
+                         No Found Category .Add one
+                    </div>
+                    <?php endif;?>
                 </div>
             </main>
         </div>

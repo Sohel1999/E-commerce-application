@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/deshboard/product">
+                <a class="nav-link" href="/deshboard/products">
                     <span data-feather="shopping-cart"></span>
                     Products
                 </a>

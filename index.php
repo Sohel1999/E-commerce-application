@@ -9,6 +9,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 require_once 'vendor/autoload.php';
   session_start();
+  define('BASE_URL','https://llc-ecommerce.mo');
 $router=new RouteCollector(new RouteParser());
 include_once __DIR__.'/routers.php';
 $capsule=new Capsule();

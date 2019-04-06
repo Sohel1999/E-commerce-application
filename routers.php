@@ -20,6 +20,7 @@ $router->controller('/users', \App\controllers\frontend\UserController::class) ;
 $router->group(['before' => 'auth','prefix'=>'deshboard'],function (RouteCollector $router){
     $router->controller('/',\App\Controllers\Backend\DeshboardController::class);
     $router->controller('categories',\App\Controllers\Backend\CategoryController::class);
+    $router->controller('/products',\App\Controllers\Backend\ProductController::class);
 });
 
 

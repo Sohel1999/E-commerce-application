@@ -8,12 +8,12 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title><?php echo $title ??'LLC E-commerce';?></title>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?php BASE_URL?>/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php BASE_URL?>/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- custome css-->
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="<?php BASE_URL?>/assets/css/app.css">
     <!-- responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php BASE_URL?>/assets/css/responsive.css">
 
 </head>
 <body>
